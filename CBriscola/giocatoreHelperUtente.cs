@@ -24,7 +24,7 @@ class giocatoreHelperUtente : giocatoreHelper {
 		catch (FormatException e) { Console.WriteLine("Valore non valido."); c = (UInt16) (numeroCarte+1); }	
 		c--;
 		if(!(ok=c<numeroCarte))
-		    Console.Write($"Valore inserito non valido. Inserire un valore compreso tra 1 e : {numeroCarte}");
+		    Console.Write($"Valore inserito non valido. Inserire un valore compreso tra 1 e {numeroCarte}: ");
 	} while(!ok);
 	return c;
     }

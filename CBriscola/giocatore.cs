@@ -34,26 +34,33 @@ class giocatore {
 	public void setFlagOrdina(bool ordina) {ordinaMano=ordina;}
 	public void addCarta(mazzo m){
 		UInt16 i=0;
+		UInt16 j = 0;
 		carta c;
 		if (iCarta==numeroCarte && iCartaGiocata==(UInt16) CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA)
 		    throw new ArgumentException($"Chiamato giocatore::setCarta con mano.size()==numeroCarte=={numeroCarte}");
 	    if (iCartaGiocata!=(UInt16) CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA) {
-			mano[iCartaGiocata]=sostituisciCartaGiocata(m);
+			for (i = (UInt16)(iCarta - 1); i > iCartaGiocata; i--)
+				mano[i - 1] = mano[i];
+			mano[i] = null;
             iCartaGiocata=(UInt16) CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA;
             return;
 	    }
-		c = sostituisciCartaGiocata(m);
-		for (i = 0; i < iCarta; i++)
-			if (mano[i].CompareTo(c)>-1)
-				break;
-		if (iCarta>0)
-			for (UInt16 j = (UInt16)iCarta; j > i; j--)
-				mano[j] = mano[j-1];
-		mano[i] = c;
+		ordina(m);
+
 		iCarta++;
 
 	}
 
+	private void ordina(mazzo m)
+    {
+		UInt16 i = 0;
+		UInt16 j = 0;
+		carta c = sostituisciCartaGiocata(m);
+		for (i = 0; i < iCarta && mano[i] != null && c.CompareTo(mano[i]) < 0; i++) ;
+		for (j = (UInt16)(numeroCarte - 1); j > i; j--)
+			mano[j] = mano[j - 1];
+		mano[i] = c;
+	}
 	private carta sostituisciCartaGiocata(mazzo m)
     {
 		carta c;

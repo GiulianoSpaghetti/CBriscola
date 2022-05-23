@@ -71,7 +71,7 @@ class cartaHelperBriscola : cartaHelper {
 			return -1;
 		else {
 			if (valore<valore1 || (semeCarta1==semeBriscola && semeCarta!=semeBriscola))
-				return 0;
+				return 1;
 			else if (valore>valore1 || (semeCarta==semeBriscola && semeCarta1!=semeBriscola))
 				return -1;
 			else	
