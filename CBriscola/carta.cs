@@ -24,7 +24,7 @@ class carta {
 	    punteggio=helper.getPunteggio(n);
 	    semeStr=helper.getSemeStr(n);
     }		
-	public void inizializza(UInt16 n, cartaHelper h) {
+	public static void inizializza(UInt16 n, cartaHelper h) {
 	    for (UInt16 i=0; i<n; i++) {
 		    carte[i]=new carta(i,h);
 	    }
@@ -38,5 +38,10 @@ class carta {
 	public bool minore(carta c1) {
         return helper.compara(helper.getNumero(getSeme(), getValore()), helper.getNumero(c1.getSeme(),c1.getValore()))==cartaHelper.RISULTATI_COMPARAZIONE.MAGGIORE_LA_SECONDA;
 
+    }
+
+    public override string ToString()
+    {
+		return $"{valore+1} di {semeStr} ";
     }
 }
