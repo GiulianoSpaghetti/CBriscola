@@ -52,6 +52,8 @@ class Program
 			if (!aggiungiCarte())
 				break;
 		}
+		Console.Write("Premere invio per uscire...");
+		Console.ReadLine();
 	}
 
 	private static void gioca()
