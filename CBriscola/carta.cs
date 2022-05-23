@@ -35,9 +35,8 @@ class carta {
 	public UInt16 getPunteggio() {return punteggio;}
 	public string getSemeStr() {return semeStr;}
 	public bool stessoSeme(carta c1) {return seme==c1.getSeme();}
-	public bool minore(carta c1) {
-        return helper.compara(helper.getNumero(getSeme(), getValore()), helper.getNumero(c1.getSeme(),c1.getValore()))==cartaHelper.RISULTATI_COMPARAZIONE.MAGGIORE_LA_SECONDA;
-
+	public int CompareTo(carta c1) {
+        return helper.CompareTo(helper.getNumero(getSeme(), getValore()), helper.getNumero(c1.getSeme(),c1.getValore()));
     }
 
     public override string ToString()

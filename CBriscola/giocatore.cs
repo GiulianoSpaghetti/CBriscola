@@ -44,7 +44,7 @@ class giocatore {
 	    }
 		c = sostituisciCartaGiocata(m);
 		for (i = 0; i < iCarta; i++)
-			if (!mano[i].minore(c))
+			if (mano[i].CompareTo(c)>-1)
 				break;
 		if (iCarta>0)
 			for (UInt16 j = (UInt16)iCarta; j > i; j--)

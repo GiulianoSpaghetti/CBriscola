@@ -57,7 +57,7 @@ class cartaHelperBriscola : cartaHelper {
 
 	public carta getCartaBriscola() { return carta.getCarta(cartaBriscola); }
 	
-	public cartaHelper.RISULTATI_COMPARAZIONE compara(UInt16 carta, UInt16 carta1) {
+	public int CompareTo (UInt16 carta, UInt16 carta1) {
 		UInt16 punteggio=getPunteggio(carta),
 			   punteggio1=getPunteggio(carta1),
 			   valore=getValore(carta),
@@ -66,15 +66,16 @@ class cartaHelperBriscola : cartaHelper {
 			   semeCarta=getSeme(carta),
 	       	   semeCarta1=getSeme(carta1);
 		if (punteggio<punteggio1)
-			return cartaHelper.RISULTATI_COMPARAZIONE.MAGGIORE_LA_SECONDA;
+			return 1;
 		else if (punteggio>punteggio1)
-			return cartaHelper.RISULTATI_COMPARAZIONE.MAGGIORE_LA_PRIMA;
+			return -1;
 		else {
 			if (valore<valore1 || (semeCarta1==semeBriscola && semeCarta!=semeBriscola))
-				return cartaHelper.RISULTATI_COMPARAZIONE.MAGGIORE_LA_SECONDA;
+				return 0;
 			else if (valore>valore1 || (semeCarta==semeBriscola && semeCarta1!=semeBriscola))
-				return cartaHelper.RISULTATI_COMPARAZIONE.MAGGIORE_LA_PRIMA;
-			else	return cartaHelper.RISULTATI_COMPARAZIONE.UGUALI;
+				return -1;
+			else	
+				return 0;
 		}
 	}
 }

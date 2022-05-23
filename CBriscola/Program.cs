@@ -42,7 +42,7 @@ class Program
 			c1 = secondo.getCartaGiocata();
 			System.Console.WriteLine($" {c} {c1}");
 
-			if ((c.minore(c1) && c.stessoSeme(c1)) || (c1.stessoSeme(briscola) && !c.stessoSeme(briscola)))
+			if ((c.CompareTo(c1)<0 && c.stessoSeme(c1)) || (c1.stessoSeme(briscola) && !c.stessoSeme(briscola)))
 			{
 				temp = secondo;
 				secondo = primo;
