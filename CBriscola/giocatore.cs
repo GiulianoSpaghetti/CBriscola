@@ -13,6 +13,7 @@ class giocatore {
 	private carta[] mano;
 	private bool ordinaMano;
 	private UInt16 numeroCarte;
+	private UInt16 iCarta;
 	private UInt16 iCartaGiocata;
 	private UInt16 punteggio;
 	private giocatoreHelper helper;
@@ -20,47 +21,65 @@ class giocatore {
 	public giocatore(giocatoreHelper h, string n, UInt16 carte, bool ordina=true) {
         ordinaMano=ordina;
         numeroCarte=carte;
-         iCartaGiocata=(UInt16) (CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA);
-         punteggio=0;
+        iCartaGiocata=(UInt16) (CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA);
+        punteggio=0;
 	    helper=h;
 	    nome=n;
         mano=new carta[3];
+		iCarta = 0;
     }
 	public string getNome() {return nome;}
 	public void setNome(string n) {nome=n;}
 	public bool getFlagOrdina() {return ordinaMano;}
 	public void setFlagOrdina(bool ordina) {ordinaMano=ordina;}
 	public void addCarta(mazzo m){
-	    if (mano.Length==numeroCarte && iCartaGiocata==(UInt16) CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA)
+		UInt16 i=0;
+		carta c;
+		if (iCarta==numeroCarte && iCartaGiocata==(UInt16) CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA)
 		    throw new ArgumentException($"Chiamato giocatore::setCarta con mano.size()==numeroCarte=={numeroCarte}");
-	    carta c;
 	    if (iCartaGiocata!=(UInt16) CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA) {
-	        try {
-		        mano[iCartaGiocata]=carta.getCarta(m.getCarta());
-	        } catch (IndexOutOfRangeException e) {
-		        numeroCarte--;
-		        return;
-            }
+			mano[iCartaGiocata]=sostituisciCartaGiocata(m);
             iCartaGiocata=(UInt16) CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA;
             return;
 	    }
-	    try {
-		    c=carta.getCarta(m.getCarta());
-	    } catch (IndexOutOfRangeException e) {
-		numeroCarte--;
-		return;
-		}	
+		c = sostituisciCartaGiocata(m);
+		for (i = 0; i < iCarta; i++)
+			if (!mano[i].minore(c))
+				break;
+		if (iCarta>0)
+			for (UInt16 j = (UInt16)iCarta; j > i; j--)
+				mano[j] = mano[j-1];
+		mano[i] = c;
+		iCarta++;
 
+	}
+
+	private carta sostituisciCartaGiocata(mazzo m)
+    {
+		carta c;
+		try
+		{
+			c = carta.getCarta(m.getCarta());
+		}
+		catch (IndexOutOfRangeException e)
+		{
+			numeroCarte--;
+			iCarta--;
+			if (numeroCarte == 0)
+				throw e;
+			return mano[numeroCarte];
+		}
+		return c;
 	}
 	public carta getCartaGiocata() {
 		return mano[iCartaGiocata];
 	}
 	public UInt16 getPunteggio() {return punteggio;}
 	public void gioca() {
-		iCartaGiocata=helper.gioca(mano);
+		iCartaGiocata=helper.gioca(mano, numeroCarte);
 	}
 	public void gioca(giocatore g1) {
-				iCartaGiocata=helper.gioca(mano, g1.getCartaGiocata());
+				iCartaGiocata=helper.gioca(mano, numeroCarte, g1.getCartaGiocata());
 	}
 	public void aggiornaPunteggio(giocatore g) {
 		helper.aggiornaPunteggio(ref punteggio, getCartaGiocata(), g.getCartaGiocata());

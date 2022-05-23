@@ -24,6 +24,8 @@ class mazzo {
     }
 	public UInt16 getNumeroCarte() {return numeroCarte;}
     public UInt16 getCarta() {
+        if (numeroCarte > 40)
+            throw new IndexOutOfRangeException();
         UInt16 c=carte[--numeroCarte];
 	    return c;
     }

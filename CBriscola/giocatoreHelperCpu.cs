@@ -42,20 +42,20 @@ class giocatoreHelperCpu: giocatoreHelper {
     else
         return (UInt16) mano.Length;
     }
-	public UInt16 gioca(carta[] mano) {
+	public UInt16 gioca(carta[] mano, UInt16 numeroCarte) {
         UInt16 i;
-        for (i=(UInt16) (mano.Length-1); i>0; i--);
+        for (i=(UInt16) (numeroCarte-1); i>0; i--);
 	        if ((mano[i].getPunteggio()>4 || briscola.stessoSeme(mano[i])))
 		        i=0;
         return i;
 
     }
-	public UInt16 gioca(carta[] mano, carta c) {
+	public UInt16 gioca(carta[] mano, UInt16 numeroCarte, carta c) {
 	UInt16 i=(UInt16) elaboratoreCarteBriscola.r.Next(0, UInt16.MaxValue);
     if (!briscola.stessoSeme(c)) {
-        if ((i=getSoprataglio(mano, c, true))<mano.Length)
+        if ((i=getSoprataglio(mano, c, true))<numeroCarte)
             return i;
-        if (c.getPunteggio()>0 && (i=getBriscola(mano))<mano.Length) {
+        if (c.getPunteggio()>0 && (i=getBriscola(mano))<numeroCarte) {
             if (c.getPunteggio()>4)
                 return i;
             if (mano[i].getPunteggio()>0)
@@ -63,7 +63,7 @@ class giocatoreHelperCpu: giocatoreHelper {
                     return i;
         }
     } else {
-        if (i%10<5 && (i=getSoprataglio(mano, c, false))<mano.Length)
+        if (i%10<5 && (i=getSoprataglio(mano, c, false))<numeroCarte)
             return i;
     }
     i=0;
