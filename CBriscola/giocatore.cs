@@ -36,18 +36,25 @@ class giocatore {
 		UInt16 i=0;
 		UInt16 j = 0;
 		carta c;
+		carta temp;
 		if (iCarta==numeroCarte && iCartaGiocata==(UInt16) CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA)
 		    throw new ArgumentException($"Chiamato giocatore::setCarta con mano.size()==numeroCarte=={numeroCarte}");
 	    if (iCartaGiocata!=(UInt16) CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA) {
-			for (i = (UInt16)(iCarta - 1); i > iCartaGiocata; i--)
-				mano[i - 1] = mano[i];
+			for (i = iCartaGiocata; i <numeroCarte-1; i++)
+				mano[i] = mano[i+1];
 			mano[i] = null;
             iCartaGiocata=(UInt16) CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA;
+			mano[iCarta - 1] = sostituisciCartaGiocata(m);
+			for (i = (UInt16)(iCarta - 1); mano[i].CompareTo(mano[i - 1]) > 0 && i > 1; i--)
+			{
+				temp = mano[i];
+				mano[i] = mano[i - 1];
+				mano[i - 1] = temp;
+			}
             return;
 	    }
 		ordina(m);
 
-		iCarta++;
 
 	}
 
@@ -60,6 +67,7 @@ class giocatore {
 		for (j = (UInt16)(numeroCarte - 1); j > i; j--)
 			mano[j] = mano[j - 1];
 		mano[i] = c;
+		iCarta++;
 	}
 	private carta sostituisciCartaGiocata(mazzo m)
     {

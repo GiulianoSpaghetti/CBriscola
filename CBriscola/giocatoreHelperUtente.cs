@@ -18,7 +18,7 @@ class giocatoreHelperUtente : giocatoreHelper {
 	for(UInt16 i=0; i<numeroCarte; i++)
 		Console.Write($"{v[i]} ");
         Console.WriteLine();
-	    Console.Write("Indicare l'indice della carta da giocare:");
+	    Console.Write("Indicare l'indice della carta da giocare: ");
 	    do {
 		try { c = System.Convert.ToUInt16(Console.ReadLine()); }
 		catch (FormatException e) { Console.WriteLine("Valore non valido."); c = (UInt16) (numeroCarte+1); }	
