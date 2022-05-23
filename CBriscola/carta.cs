@@ -15,16 +15,16 @@ class carta {
 			   valore,
 			   punteggio;
 	private string semeStr;
-	private cartaHelper helper;
+	private cartaHelperBriscola helper;
     private static carta[] carte=new carta[40];
-    private carta(UInt16 n, cartaHelper h) {
+    private carta(UInt16 n, cartaHelperBriscola h) {
         helper=h;
         seme=helper.getSeme(n);
 	    valore=helper.getValore(n);
 	    punteggio=helper.getPunteggio(n);
 	    semeStr=helper.getSemeStr(n);
     }		
-	public static void inizializza(UInt16 n, cartaHelper h) {
+	public static void inizializza(UInt16 n, cartaHelperBriscola h) {
 	    for (UInt16 i=0; i<n; i++) {
 		    carte[i]=new carta(i,h);
 	    }
@@ -42,6 +42,6 @@ class carta {
 
     public override string ToString()
     {
-		return $"{valore+1} di {semeStr} ";
+		return $"{valore+1} di {semeStr}{(stessoSeme(helper.getCartaBriscola())?"*":" ")} ";
     }
 }
