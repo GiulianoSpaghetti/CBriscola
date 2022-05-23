@@ -60,7 +60,7 @@ class Program
 		{
 			primo.gioca();
 			if (primo == cpu)
-				System.Console.WriteLine($"Giocata carta ${primo.getCartaGiocata()}");
+				System.Console.WriteLine($"Giocata carta {primo.getCartaGiocata()}");
 			secondo.gioca(primo);
 		}
 		catch (System.ArgumentNullException e)
