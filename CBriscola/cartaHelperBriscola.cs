@@ -54,6 +54,8 @@ class cartaHelperBriscola : cartaHelper {
 			throw new ArgumentException($"Chiamato cartaHelperBriscola::getNumero con seme={seme} e valore={valore}");
 		return (UInt16) (seme*10+valore);
 	}
+
+	public carta getCartaBriscola() { return carta.getCarta(cartaBriscola); }
 	
 	public cartaHelper.RISULTATI_COMPARAZIONE compara(UInt16 carta, UInt16 carta1) {
 		UInt16 punteggio=getPunteggio(carta),
