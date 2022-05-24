@@ -61,6 +61,24 @@ namespace CBriscola.Strings.en {
         }
         
         /// <summary>
+        ///   Cerca una stringa localizzata simile a of.
+        /// </summary>
+        internal static string AdOperaDi {
+            get {
+                return ResourceManager.GetString("AdOperaDi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Giulio Sorrentino.
+        /// </summary>
+        internal static string Autore {
+            get {
+                return ResourceManager.GetString("Autore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Cerca una stringa localizzata simile a clubs.
         /// </summary>
         internal static string bastoni {
@@ -228,6 +246,15 @@ namespace CBriscola.Strings.en {
         internal static string spade {
             get {
                 return ResourceManager.GetString("spade", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Translation.
+        /// </summary>
+        internal static string Traduzione {
+            get {
+                return ResourceManager.GetString("Traduzione", resourceCulture);
             }
         }
         
