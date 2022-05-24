@@ -32,18 +32,18 @@ namespace CBriscola
             if (maggiore)
             {
                 for (i = (UInt16)(mano.Length - 1); i > 0; i--)
-                    if (c.stessoSeme(mano[i]) && c.CompareTo(mano[i]) < 0)
+                    if (c.stessoSeme(mano[i]) && c.CompareTo(mano[i]) > 0)
                     {
                         trovata = true;
                         break;
                     }
-                    else if (c.stessoSeme(mano[i]) && mano[i].CompareTo(c) < 0)
+                    else if (c.stessoSeme(mano[i]) && mano[i].CompareTo(c) > 0)
                         break;
             }
             else
             {
                 for (i = 0; i < mano.Length; i++)
-                    if (c.stessoSeme(mano[i]) && c.CompareTo(mano[i]) < 0)
+                    if (c.stessoSeme(mano[i]) && c.CompareTo(mano[i]) > 0)
                     {
                         trovata = true;
                         break;
