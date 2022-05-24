@@ -8,4 +8,6 @@ https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/keywords/inter
 
 https://docs.microsoft.com/it-it/dotnet/api/system.string.compareto?view=net-6.0
 
+https://docs.microsoft.com/it-it/windows-server/administration/linux-package-repository-for-microsoft-software
+
 https://github.com/numerunix/briscola
