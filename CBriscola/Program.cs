@@ -30,7 +30,7 @@ namespace CBriscola {
 			carta c;
 			carta c1;
 			carta briscola = carta.getCarta(elaboratoreCarteBriscola.getCartaBriscola());
-			string vers = "0.2.4";
+			string vers = "0.2.5";
 			Console.WriteLine($"CBriscola {vers} {mgr.GetString("AdOperaDi")} Giulio Sorrentino. {mgr.GetString("Traduzione")} {mgr.GetString("AdOperaDi")} {mgr.GetString("Autore")}.");
 			for (UInt16 i = 0; i < 3; i++)
 			{
@@ -39,10 +39,12 @@ namespace CBriscola {
 			}
 			while (true)
 			{
-				System.Console.WriteLine($"{mgr.GetString("CartaBriscola")}: {briscola}");
+				if (m.getNumeroCarte()<UInt16.MaxValue) {
+					System.Console.WriteLine($"{mgr.GetString("CartaBriscola")}: {briscola}");
+					System.Console.WriteLine($"{mgr.GetString("CarteMazzo")}: {m.getNumeroCarte()} {mgr.GetString("carte")}.");
+				}
 				System.Console.WriteLine($"{mgr.GetString("PuntiCpu")}: {cpu.getPunteggio()}"); ;
 				System.Console.WriteLine($"{mgr.GetString("PuntiUtente")}: {g.getPunteggio()}");
-				System.Console.WriteLine($"{mgr.GetString("CarteMazzo")}: {m.getNumeroCarte()} {mgr.GetString("carte")}.");
 				gioca();
 				c = primo.getCartaGiocata();
 				c1 = secondo.getCartaGiocata();
