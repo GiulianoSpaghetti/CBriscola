@@ -18,7 +18,7 @@ namespace CBriscola {
 		public static System.Resources.ResourceManager mgr;
 		public static void Main(String[] args)
 		{
-			mgr=new System.Resources.ResourceManager($"CBriscola.Strings.{(args.Length>0?args[0]:"it")}.Resources", System.Reflection.Assembly.GetExecutingAssembly());
+			CreaResourceManager(args.Length > 0 ? args[0] : "it");
 			elaboratoreCarteBriscola e = new elaboratoreCarteBriscola();
 			m = new mazzo(e);
 			carta.inizializza(40, cartaHelperBriscola.getIstanza(e));
@@ -90,6 +90,18 @@ namespace CBriscola {
 				return false;
 			}
 			return true;
+		}
+		private static void CreaResourceManager(string arg) {
+			System.Resources.ResourceManager m;
+			m = new System.Resources.ResourceManager($"CBriscola.Strings.{arg}.Resources", System.Reflection.Assembly.GetExecutingAssembly()); try
+			{
+				m.GetString("di");
+			}
+			catch (System.Resources.MissingManifestResourceException e)
+			{
+				m = new System.Resources.ResourceManager($"CBriscola.Strings.it.Resources", System.Reflection.Assembly.GetExecutingAssembly());
+			}
+			mgr = m;
 		}
 	}
 }
