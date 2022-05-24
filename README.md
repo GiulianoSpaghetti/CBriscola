@@ -17,7 +17,7 @@ La traduzione comincia dalla tupla "AdOperaDi".
 
 Va detto che l'autore della traduzione non è hardcodato, ma è disponibile all'interno del file di traduzione, e che la GPL obbliga a mantenere i credits, per cui fate i seri e traducete il più possibile prendendovi solo i vostri credits.
 
-
+Se volete mandarmi le vostre traduzioni sono ben felice di aggiungerle al programma originale e di lasciarvi i credits, basta che aprite una pull request su questa piattaforma aggiungendo il file di risorse ed il file xml che i programmi creano.
 
 # Bibliografia
 https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/keywords/ref
