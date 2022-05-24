@@ -6,85 +6,89 @@
  *  Copyright 2022 Some rights reserved.
  *
  */
-class Program
-{
-	private static giocatore g;
-	private static giocatore cpu;
-	private static giocatore primo;
-	private static giocatore secondo;
-	private static mazzo m;
-	public static void Main(String[] args)
+
+namespace CBriscola {
+	class Program
 	{
-		elaboratoreCarteBriscola e = new elaboratoreCarteBriscola();
-		m = new mazzo(e);
-		carta.inizializza(40, cartaHelperBriscola.getIstanza(e));
-		g = new giocatore(new giocatoreHelperUtente(), "Giulio", 3);
-		cpu = new giocatore(new giocatoreHelperCpu(elaboratoreCarteBriscola.getCartaBriscola()), "Cpu", 3);
-		primo = g;
-		secondo = cpu;
-		giocatore temp = g;
-		carta c;
-		carta c1;
-		carta briscola = carta.getCarta(elaboratoreCarteBriscola.getCartaBriscola());
-		for (UInt16 i = 0; i < 3; i++)
+		private static giocatore g;
+		private static giocatore cpu;
+		private static giocatore primo;
+		private static giocatore secondo;
+		private static mazzo m;
+		public static System.Resources.ResourceManager mgr = new System.Resources.ResourceManager("CBriscola.Strings.fr.Resources", System.Reflection.Assembly.GetExecutingAssembly());
+		public static void Main(String[] args)
 		{
-			g.addCarta(m);
-			cpu.addCarta(m);
-		}
-		while (true)
-		{
-			System.Console.WriteLine($"La carta di briscola è {briscola}");
-			System.Console.WriteLine($"Punti del computer: {cpu.getPunteggio()}"); ;
-			System.Console.WriteLine($"Punti tuoi:  {g.getPunteggio()}");
-			System.Console.WriteLine($"Nel mazzo ci sono {m.getNumeroCarte()} carte.");
-			gioca();
-			c = primo.getCartaGiocata();
-			c1 = secondo.getCartaGiocata();
-			System.Console.WriteLine($" {c} {c1}");
-
-			if ((c.CompareTo(c1)>0 && c.stessoSeme(c1)) || (c1.stessoSeme(briscola) && !c.stessoSeme(briscola)))
+			elaboratoreCarteBriscola e = new elaboratoreCarteBriscola();
+			m = new mazzo(e);
+			carta.inizializza(40, cartaHelperBriscola.getIstanza(e));
+			g = new giocatore(new giocatoreHelperUtente(), "Giulio", 3);
+			cpu = new giocatore(new giocatoreHelperCpu(elaboratoreCarteBriscola.getCartaBriscola()), "Cpu", 3);
+			primo = g;
+			secondo = cpu;
+			giocatore temp = g;
+			carta c;
+			carta c1;
+			carta briscola = carta.getCarta(elaboratoreCarteBriscola.getCartaBriscola());
+			for (UInt16 i = 0; i < 3; i++)
 			{
-				temp = secondo;
-				secondo = primo;
-				primo = temp;
+				g.addCarta(m);
+				cpu.addCarta(m);
 			}
-			primo.aggiornaPunteggio(secondo);
-			if (!aggiungiCarte())
-				break;
-		}
-		Console.Write("Premere invio per uscire...");
-		Console.ReadLine();
-	}
+			while (true)
+			{
+				System.Console.WriteLine($"{mgr.GetString("CartaBriscola")}: {briscola}");
+				System.Console.WriteLine($"{mgr.GetString("PuntiCpu")}: {cpu.getPunteggio()}"); ;
+				System.Console.WriteLine($"{mgr.GetString("PuntiUtente")}: {g.getPunteggio()}");
+				System.Console.WriteLine($"{mgr.GetString("CarteMazzo")}: {m.getNumeroCarte()} {mgr.GetString("carte")}.");
+				gioca();
+				c = primo.getCartaGiocata();
+				c1 = secondo.getCartaGiocata();
+				System.Console.WriteLine($" {c} {c1}");
 
-	private static void gioca()
-    {
-		try
-		{
-			primo.gioca();
-			if (primo == cpu)
-				System.Console.WriteLine($"Giocata carta {primo.getCartaGiocata()}");
-			secondo.gioca(primo);
-		}
-		catch (System.ArgumentNullException e)
-		{
+				if ((c.CompareTo(c1) > 0 && c.stessoSeme(c1)) || (c1.stessoSeme(briscola) && !c.stessoSeme(briscola)))
+				{
+					temp = secondo;
+					secondo = primo;
+					primo = temp;
+				}
+				primo.aggiornaPunteggio(secondo);
+				if (!aggiungiCarte())
+					break;
+			}
+			Console.Write($"{mgr.GetString("PremereInvio")}");
+			Console.ReadLine();
 		}
 
-	}
+		private static void gioca()
+		{
+			try
+			{
+				primo.gioca();
+				if (primo == cpu)
+					System.Console.WriteLine($"{mgr.GetString("Giocata")} {primo.getCartaGiocata()}");
+				secondo.gioca(primo);
+			}
+			catch (System.ArgumentNullException e)
+			{
+			}
 
-	private static bool aggiungiCarte()
-    {	
-		try
-		{
-			primo.addCarta(m);
-			secondo.addCarta(m);
 		}
-		catch (IndexOutOfRangeException e)
+
+		private static bool aggiungiCarte()
 		{
-			System.Console.WriteLine($"La partita è finita.");
-			System.Console.WriteLine($"Punti tuoi: {g.getPunteggio()}");
-			System.Console.WriteLine($"Punti del computer: {cpu.getPunteggio()}");
-			return false;
+			try
+			{
+				primo.addCarta(m);
+				secondo.addCarta(m);
+			}
+			catch (IndexOutOfRangeException e)
+			{
+				System.Console.WriteLine($"{mgr.GetString("PartitaFinita")}.");
+				System.Console.WriteLine($"{mgr.GetString("PuntiUtente")}: {g.getPunteggio()}");
+				System.Console.WriteLine($"{mgr.GetString("PuntiCpu")}: {cpu.getPunteggio()}");
+				return false;
+			}
+			return true;
 		}
-		return true;
 	}
 }

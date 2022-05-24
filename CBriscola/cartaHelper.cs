@@ -8,11 +8,14 @@
  */
  
  using System;
-
-interface cartaHelper {
-	public abstract UInt16 getSeme(UInt16 carta);
-	public abstract UInt16 getValore(UInt16 carta);
-	public abstract UInt16 getPunteggio(UInt16 carta);
-	public abstract string getSemeStr(UInt16 carta);
-	public abstract UInt16 getNumero(UInt16 seme, UInt16 valore);
-};
+namespace CBriscola
+{
+	interface cartaHelper
+	{
+		public abstract UInt16 getSeme(UInt16 carta);
+		public abstract UInt16 getValore(UInt16 carta);
+		public abstract UInt16 getPunteggio(UInt16 carta);
+		public abstract string getSemeStr(UInt16 carta);
+		public abstract UInt16 getNumero(UInt16 seme, UInt16 valore);
+	};
+}

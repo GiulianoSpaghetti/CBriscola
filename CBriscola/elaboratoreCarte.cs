@@ -8,6 +8,10 @@
  */
 
 using System;
-interface elaboratoreCarte {
-    public abstract UInt16 getCarta();
-};
+namespace CBriscola
+{
+    interface elaboratoreCarte
+    {
+        public abstract UInt16 getCarta();
+    };
+}

@@ -8,8 +8,12 @@
  */
 
 using System;
-interface giocatoreHelper {
-	abstract UInt16 gioca(carta[] v, UInt16 numeroCarte);
-    abstract UInt16 gioca(carta[] v, UInt16 numeroCarte, carta c);
-	abstract void aggiornaPunteggio(ref UInt16 punteggio, carta c, carta c1) ;
-};
+namespace CBriscola
+{
+	interface giocatoreHelper
+	{
+		abstract UInt16 gioca(carta[] v, UInt16 numeroCarte);
+		abstract UInt16 gioca(carta[] v, UInt16 numeroCarte, carta c);
+		abstract void aggiornaPunteggio(ref UInt16 punteggio, carta c, carta c1);
+	};
+}

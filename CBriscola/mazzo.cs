@@ -8,25 +8,32 @@
  */
 
 using System;
-class mazzo {
-	private UInt16[] carte;
-	private UInt16 numeroCarte;
-    private elaboratoreCarte elaboratore;
-	private void mischia() {
-    	for(numeroCarte=0; numeroCarte<40; numeroCarte++)
-            carte[numeroCarte]=elaboratore.getCarta();
-    }
+namespace CBriscola
+{
+    class mazzo
+    {
+        private UInt16[] carte;
+        private UInt16 numeroCarte;
+        private elaboratoreCarte elaboratore;
+        private void mischia()
+        {
+            for (numeroCarte = 0; numeroCarte < 40; numeroCarte++)
+                carte[numeroCarte] = elaboratore.getCarta();
+        }
 
-	public mazzo(elaboratoreCarte e) {
-        elaboratore=e;
-        carte=new UInt16[40];
-	    mischia();
-    }
-	public UInt16 getNumeroCarte() {return numeroCarte;}
-    public UInt16 getCarta() {
-        if (numeroCarte > 40)
-            throw new IndexOutOfRangeException();
-        UInt16 c=carte[--numeroCarte];
-	    return c;
-    }
-};
+        public mazzo(elaboratoreCarte e)
+        {
+            elaboratore = e;
+            carte = new UInt16[40];
+            mischia();
+        }
+        public UInt16 getNumeroCarte() { return numeroCarte; }
+        public UInt16 getCarta()
+        {
+            if (numeroCarte > 40)
+                throw new IndexOutOfRangeException();
+            UInt16 c = carte[--numeroCarte];
+            return c;
+        }
+    };
+}
