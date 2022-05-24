@@ -144,14 +144,26 @@
   <data name="Giocata" xml:space="preserve">
     <value>Carta jugada</value>
   </data>
+  <data name="HaiPersoPer" xml:space="preserve">
+    <value>Tienes perdido por</value>
+  </data>
+  <data name="HaiVintoPer" xml:space="preserve">
+    <value>Tienes ganado po</value>
+  </data>
   <data name="InserisciNuovoNumero" xml:space="preserve">
     <value>Valor no válido. Por favor inserte un número entre 1 y</value>
+  </data>
+  <data name="ParitaPatta" xml:space="preserve">
+    <value>La jugada es en paridad</value>
   </data>
   <data name="PartitaFinita" xml:space="preserve">
     <value>La jugada se acabo.</value>
   </data>
   <data name="PremereInvio" xml:space="preserve">
     <value>Presiona regresar para salir</value>
+  </data>
+  <data name="punti" xml:space="preserve">
+    <value>puntos</value>
   </data>
   <data name="PuntiCpu" xml:space="preserve">
     <value>Puntos de Cpu</value>
