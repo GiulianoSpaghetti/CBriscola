@@ -118,72 +118,72 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AdOperaDi" xml:space="preserve">
-    <value>of</value>
+    <value>ad opera di</value>
   </data>
   <data name="Autore" xml:space="preserve">
     <value>Giulio Sorrentino</value>
   </data>
   <data name="bastoni" xml:space="preserve">
-    <value>clubs</value>
+    <value>bastoni</value>
   </data>
   <data name="CartaBriscola" xml:space="preserve">
-    <value>The trump suit is</value>
+    <value>La carta di briscola è</value>
   </data>
   <data name="CartaDaGiocare" xml:space="preserve">
-    <value>Please insert the number of the card you want play</value>
+    <value>Indicare l'indice della carta da giocare</value>
   </data>
   <data name="carte" xml:space="preserve">
-    <value>cards</value>
+    <value>carte</value>
   </data>
   <data name="CarteMazzo" xml:space="preserve">
-    <value>In deck remains</value>
+    <value>Nel mazzo ci sono</value>
   </data>
   <data name="coppe" xml:space="preserve">
-    <value>cups</value>
+    <value>coppe</value>
   </data>
   <data name="denari" xml:space="preserve">
-    <value>suits</value>
+    <value>denari</value>
   </data>
   <data name="di" xml:space="preserve">
-    <value>of</value>
+    <value>di</value>
   </data>
   <data name="Giocata" xml:space="preserve">
-    <value>Played card</value>
+    <value>Giocata carta</value>
   </data>
   <data name="HaiPersoPer" xml:space="preserve">
-    <value>You lost for</value>
+    <value>Hai perso per</value>
   </data>
   <data name="HaiVintoPer" xml:space="preserve">
-    <value>You have won for</value>
+    <value>Hai vinto per</value>
   </data>
   <data name="InserisciNuovoNumero" xml:space="preserve">
-    <value>Invalid value. Please insert a number between 1 and</value>
+    <value>Valore inserito non valido. Inserire un valore compreso tra 1 e</value>
   </data>
   <data name="PartitaFinita" xml:space="preserve">
-    <value>The game is over</value>
+    <value>La partita è finita</value>
   </data>
   <data name="PartitaPatta" xml:space="preserve">
-    <value>The game is draw</value>
+    <value>La partita è patta</value>
   </data>
   <data name="PremereInvio" xml:space="preserve">
-    <value>Press return to exit</value>
+    <value>Premere invio per uscire...</value>
   </data>
   <data name="punti" xml:space="preserve">
-    <value>ponts</value>
+    <value>punti</value>
   </data>
   <data name="PuntiCpu" xml:space="preserve">
-    <value>Points of Cpu</value>
+    <value>Punti del computer</value>
   </data>
   <data name="PuntiUtente" xml:space="preserve">
-    <value>Your Points</value>
+    <value>Punti tuoi</value>
   </data>
   <data name="spade" xml:space="preserve">
-    <value>spades</value>
+    <value>spade</value>
   </data>
   <data name="Traduzione" xml:space="preserve">
-    <value>Translation</value>
+    <value>Traduzione</value>
   </data>
   <data name="ValoreNonValido" xml:space="preserve">
-    <value>Invalid value</value>
+    <value>Valore non valido</value>
   </data>
 </root>
