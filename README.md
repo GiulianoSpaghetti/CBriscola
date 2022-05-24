@@ -1,5 +1,6 @@
 # CBriscola
-Clone in c del progetto briscola.
+Clone in c sharp del progetto briscola.
+Attualmente è solo per console, ma è internazionalizzato.
 
 # Bibliografia
 https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/keywords/ref
