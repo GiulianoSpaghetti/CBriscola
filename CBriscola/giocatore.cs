@@ -50,11 +50,11 @@ namespace CBriscola {
 				mano[i] = null;
 				iCartaGiocata = (UInt16)CARTA_GIOCATA.NESSUNA_CARTA_GIOCATA;
 				mano[iCarta - 1] = sostituisciCartaGiocata(m);
-				for (i = (UInt16)(iCarta - 1); iCarta>1 && mano[i].CompareTo(mano[i - 1]) > 0 && i > 1; i--)
+				for (i = (UInt16)(iCarta - 2); i < UInt16.MaxValue && iCarta > 1 && mano[i].CompareTo(mano[i + 1]) < 0; i--)
 				{
 					temp = mano[i];
-					mano[i] = mano[i - 1];
-					mano[i - 1] = temp;
+					mano[i] = mano[i+1];
+					mano[i+1] = temp;
 				}
 				return;
 			}

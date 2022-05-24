@@ -87,6 +87,14 @@ namespace CBriscola {
 				System.Console.WriteLine($"{mgr.GetString("PartitaFinita")}.");
 				System.Console.WriteLine($"{mgr.GetString("PuntiUtente")}: {g.getPunteggio()}");
 				System.Console.WriteLine($"{mgr.GetString("PuntiCpu")}: {cpu.getPunteggio()}");
+				if (g.getPunteggio() == cpu.getPunteggio())
+					Console.WriteLine($"{mgr.GetString("PartitaPatta")}.");
+				else
+					if (g.getPunteggio() > cpu.getPunteggio())
+						Console.WriteLine($"{mgr.GetString("HaiVintoPer")} {g.getPunteggio() - cpu.getPunteggio()} {mgr.GetString("punti")}.");
+					else
+						Console.WriteLine($"{mgr.GetString("HaiPersoPer")} {cpu.getPunteggio() - g.getPunteggio()} {mgr.GetString("punti")}.");
+
 				return false;
 			}
 			return true;

@@ -38,7 +38,7 @@ namespace CBriscola
 		public bool stessoSeme(carta c1) { if (c1 == null) return false; else return seme == c1.getSeme(); }
 		public int CompareTo(carta c1) {
 			if (c1 == null)
-				return -1;
+				return 1;
 			else
 				return helper.CompareTo(helper.getNumero(getSeme(), getValore()), helper.getNumero(c1.getSeme(), c1.getValore()));
 		}
