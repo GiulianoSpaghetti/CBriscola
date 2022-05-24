@@ -142,6 +142,24 @@ namespace CBriscola.Strings.en {
         }
         
         /// <summary>
+        ///   Cerca una stringa localizzata simile a You lost for.
+        /// </summary>
+        internal static string HaiPersoPer {
+            get {
+                return ResourceManager.GetString("HaiPersoPer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a You have won for.
+        /// </summary>
+        internal static string HaiVintoPer {
+            get {
+                return ResourceManager.GetString("HaiVintoPer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Cerca una stringa localizzata simile a Invalid value. Please insert a number between 1 and.
         /// </summary>
         internal static string InserisciNuovoNumero {
@@ -160,11 +178,29 @@ namespace CBriscola.Strings.en {
         }
         
         /// <summary>
+        ///   Cerca una stringa localizzata simile a The game is draw.
+        /// </summary>
+        internal static string PartitaPatta {
+            get {
+                return ResourceManager.GetString("PartitaPatta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Cerca una stringa localizzata simile a Press return to exit.
         /// </summary>
         internal static string PremereInvio {
             get {
                 return ResourceManager.GetString("PremereInvio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a ponts.
+        /// </summary>
+        internal static string punti {
+            get {
+                return ResourceManager.GetString("punti", resourceCulture);
             }
         }
         
