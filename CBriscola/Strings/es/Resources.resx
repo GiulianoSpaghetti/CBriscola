@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AdOperaDi" xml:space="preserve">
+    <value>por</value>
+  </data>
+  <data name="Autore" xml:space="preserve">
+    <value>Alice Victoria</value>
+  </data>
   <data name="bastoni" xml:space="preserve">
     <value>bastos</value>
   </data>
@@ -173,6 +179,9 @@
   </data>
   <data name="spade" xml:space="preserve">
     <value>espadas</value>
+  </data>
+  <data name="Traduzione" xml:space="preserve">
+    <value>Traducción</value>
   </data>
   <data name="ValoreNonValido" xml:space="preserve">
     <value>valor no válido</value>
