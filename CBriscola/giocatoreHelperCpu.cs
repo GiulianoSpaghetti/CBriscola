@@ -75,13 +75,13 @@ namespace CBriscola
                     if (c.getPunteggio() > 4)
                         return i;
                     if (mano[i].getPunteggio() > 0)
-                        if (i % 10 < 5)
+                        if (elaboratoreCarteBriscola.r.Next() % 10 < 5)
                             return i;
                 }
             }
             else
             {
-                if (i % 10 < 5 && (i = getSoprataglio(mano, c, false)) < numeroCarte)
+                if (elaboratoreCarteBriscola.r.Next() % 10 < 5 && (i = getSoprataglio(mano, c, false)) < numeroCarte)
                     return i;
             }
             i = 0;
