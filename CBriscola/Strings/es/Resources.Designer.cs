@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CBriscola.Strings.fr {
+namespace CBriscola.Strings.es {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CBriscola.Strings.fr {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CBriscola.Strings.fr.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CBriscola.Strings.es.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a batons.
+        ///   Cerca una stringa localizzata simile a bastos.
         /// </summary>
         internal static string bastoni {
             get {
@@ -70,7 +70,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a La couleur d&apos; atout.
+        ///   Cerca una stringa localizzata simile a Il seme de brisca es.
         /// </summary>
         internal static string CartaBriscola {
             get {
@@ -79,7 +79,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Veuillez insérer le numéro de la carte que vous voulez jouer.
+        ///   Cerca una stringa localizzata simile a Por favor, inserte el número de la tarjeta que desea jugar.
         /// </summary>
         internal static string CartaDaGiocare {
             get {
@@ -88,7 +88,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a cartes.
+        ///   Cerca una stringa localizzata simile a cartas.
         /// </summary>
         internal static string carte {
             get {
@@ -97,7 +97,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Dans le jeu ça reste.
+        ///   Cerca una stringa localizzata simile a En la baraja sobra.
         /// </summary>
         internal static string CarteMazzo {
             get {
@@ -106,7 +106,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a coupes.
+        ///   Cerca una stringa localizzata simile a copas.
         /// </summary>
         internal static string coppe {
             get {
@@ -115,7 +115,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a deniers.
+        ///   Cerca una stringa localizzata simile a oro.
         /// </summary>
         internal static string denari {
             get {
@@ -124,7 +124,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a depuis.
+        ///   Cerca una stringa localizzata simile a desde.
         /// </summary>
         internal static string di {
             get {
@@ -133,7 +133,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Carte jouée.
+        ///   Cerca una stringa localizzata simile a Carta jugada.
         /// </summary>
         internal static string Giocata {
             get {
@@ -142,7 +142,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Valeur invalide. Veuillez insérer un nombre entre 1 et.
+        ///   Cerca una stringa localizzata simile a Valor no válido. Por favor inserte un número entre 1 y.
         /// </summary>
         internal static string InserisciNuovoNumero {
             get {
@@ -151,7 +151,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Jeu terminé.
+        ///   Cerca una stringa localizzata simile a La jugada se acabo..
         /// </summary>
         internal static string PartitaFinita {
             get {
@@ -160,7 +160,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Appuyez sur retour pour quitter.
+        ///   Cerca una stringa localizzata simile a Presiona regresar para salir.
         /// </summary>
         internal static string PremereInvio {
             get {
@@ -169,7 +169,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Points de Cpu.
+        ///   Cerca una stringa localizzata simile a Puntos de Cpu.
         /// </summary>
         internal static string PuntiCpu {
             get {
@@ -178,7 +178,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Vos points.
+        ///   Cerca una stringa localizzata simile a Tus puntos.
         /// </summary>
         internal static string PuntiUtente {
             get {
@@ -187,7 +187,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a epées.
+        ///   Cerca una stringa localizzata simile a espadas.
         /// </summary>
         internal static string spade {
             get {
@@ -196,7 +196,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Valeur invalide.
+        ///   Cerca una stringa localizzata simile a valor no válido.
         /// </summary>
         internal static string ValoreNonValido {
             get {
