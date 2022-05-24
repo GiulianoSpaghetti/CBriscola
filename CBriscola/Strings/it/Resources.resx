@@ -144,14 +144,26 @@
   <data name="Giocata" xml:space="preserve">
     <value>Giocata carta</value>
   </data>
+  <data name="HaiPersoPer" xml:space="preserve">
+    <value>Hai perso per</value>
+  </data>
+  <data name="HaiVintoPer" xml:space="preserve">
+    <value>Hai vinto per</value>
+  </data>
   <data name="InserisciNuovoNumero" xml:space="preserve">
     <value>Valore inserito non valido. Inserire un valore compreso tra 1 e</value>
   </data>
   <data name="PartitaFinita" xml:space="preserve">
     <value>La partita è finita</value>
   </data>
+  <data name="PartitaPatta" xml:space="preserve">
+    <value>La partita è patta</value>
+  </data>
   <data name="PremereInvio" xml:space="preserve">
     <value>Premere invio per uscire...</value>
+  </data>
+  <data name="punti" xml:space="preserve">
+    <value>punti</value>
   </data>
   <data name="PuntiCpu" xml:space="preserve">
     <value>Punti del computer</value>

@@ -142,6 +142,24 @@ namespace CBriscola.Strings.it {
         }
         
         /// <summary>
+        ///   Cerca una stringa localizzata simile a Hai perso per.
+        /// </summary>
+        internal static string HaiPersoPer {
+            get {
+                return ResourceManager.GetString("HaiPersoPer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Hai vinto per.
+        /// </summary>
+        internal static string HaiVintoPer {
+            get {
+                return ResourceManager.GetString("HaiVintoPer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Cerca una stringa localizzata simile a Valore inserito non valido. Inserire un valore compreso tra 1 e.
         /// </summary>
         internal static string InserisciNuovoNumero {
@@ -160,11 +178,29 @@ namespace CBriscola.Strings.it {
         }
         
         /// <summary>
+        ///   Cerca una stringa localizzata simile a La partita è patta.
+        /// </summary>
+        internal static string PartitaPatta {
+            get {
+                return ResourceManager.GetString("PartitaPatta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Cerca una stringa localizzata simile a Premere invio per uscire....
         /// </summary>
         internal static string PremereInvio {
             get {
                 return ResourceManager.GetString("PremereInvio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a punti.
+        /// </summary>
+        internal static string punti {
+            get {
+                return ResourceManager.GetString("punti", resourceCulture);
             }
         }
         
