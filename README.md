@@ -33,4 +33,6 @@ https://livebook.manning.com/book/dotnet-core-in-action/chapter-10/6
 
 https://docs.microsoft.com/it-it/windows-server/administration/linux-package-repository-for-microsoft-software
 
+https://stackoverflow.com/questions/21019144/how-to-create-manual-entry-for-deb-package
+
 https://github.com/numerunix/briscola
