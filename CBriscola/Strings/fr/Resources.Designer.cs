@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CBriscola.Strings.fr {
+namespace CBriscola.Strings.it {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CBriscola.Strings.fr {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CBriscola.Strings.fr.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CBriscola.Strings.it.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a par.
+        ///   Cerca una stringa localizzata simile a ad opera di.
         /// </summary>
         internal static string AdOperaDi {
             get {
@@ -70,7 +70,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Francesca Milano.
+        ///   Cerca una stringa localizzata simile a Giulio Sorrentino.
         /// </summary>
         internal static string Autore {
             get {
@@ -79,7 +79,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a batons.
+        ///   Cerca una stringa localizzata simile a bastoni.
         /// </summary>
         internal static string bastoni {
             get {
@@ -88,7 +88,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a La couleur d&apos; atout.
+        ///   Cerca una stringa localizzata simile a La carta di briscola è.
         /// </summary>
         internal static string CartaBriscola {
             get {
@@ -97,7 +97,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Veuillez insérer le numéro de la carte que vous voulez jouer.
+        ///   Cerca una stringa localizzata simile a Indicare l&apos;indice della carta da giocare.
         /// </summary>
         internal static string CartaDaGiocare {
             get {
@@ -106,7 +106,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a cartes.
+        ///   Cerca una stringa localizzata simile a carte.
         /// </summary>
         internal static string carte {
             get {
@@ -115,7 +115,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Dans le jeu ça reste.
+        ///   Cerca una stringa localizzata simile a Nel mazzo ci sono.
         /// </summary>
         internal static string CarteMazzo {
             get {
@@ -124,7 +124,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a coupes.
+        ///   Cerca una stringa localizzata simile a coppe.
         /// </summary>
         internal static string coppe {
             get {
@@ -133,7 +133,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a deniers.
+        ///   Cerca una stringa localizzata simile a denari.
         /// </summary>
         internal static string denari {
             get {
@@ -142,7 +142,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a depuis.
+        ///   Cerca una stringa localizzata simile a di.
         /// </summary>
         internal static string di {
             get {
@@ -151,7 +151,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Carte jouée.
+        ///   Cerca una stringa localizzata simile a Giocata carta.
         /// </summary>
         internal static string Giocata {
             get {
@@ -160,7 +160,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Tu as perdu pour.
+        ///   Cerca una stringa localizzata simile a Hai perso per.
         /// </summary>
         internal static string HaiPersoPer {
             get {
@@ -169,7 +169,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Tu as gagné pou.
+        ///   Cerca una stringa localizzata simile a Hai vinto per.
         /// </summary>
         internal static string HaiVintoPer {
             get {
@@ -178,7 +178,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Valeur invalide. Veuillez insérer un nombre entre 1 et.
+        ///   Cerca una stringa localizzata simile a Valore inserito non valido. Inserire un valore compreso tra 1 e.
         /// </summary>
         internal static string InserisciNuovoNumero {
             get {
@@ -187,7 +187,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Jeu terminé.
+        ///   Cerca una stringa localizzata simile a La partita è finita.
         /// </summary>
         internal static string PartitaFinita {
             get {
@@ -196,7 +196,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Le jeu donne un push.
+        ///   Cerca una stringa localizzata simile a La partita è patta.
         /// </summary>
         internal static string PartitaPatta {
             get {
@@ -205,7 +205,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Appuyez sur retour pour quitter.
+        ///   Cerca una stringa localizzata simile a Premere invio per uscire....
         /// </summary>
         internal static string PremereInvio {
             get {
@@ -214,7 +214,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a points.
+        ///   Cerca una stringa localizzata simile a punti.
         /// </summary>
         internal static string punti {
             get {
@@ -223,7 +223,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Points de Cpu.
+        ///   Cerca una stringa localizzata simile a Punti del computer.
         /// </summary>
         internal static string PuntiCpu {
             get {
@@ -232,7 +232,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Vos points.
+        ///   Cerca una stringa localizzata simile a Punti tuoi.
         /// </summary>
         internal static string PuntiUtente {
             get {
@@ -241,7 +241,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a epées.
+        ///   Cerca una stringa localizzata simile a spade.
         /// </summary>
         internal static string spade {
             get {
@@ -250,7 +250,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Traduction.
+        ///   Cerca una stringa localizzata simile a Traduzione.
         /// </summary>
         internal static string Traduzione {
             get {
@@ -259,7 +259,7 @@ namespace CBriscola.Strings.fr {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Valeur invalide.
+        ///   Cerca una stringa localizzata simile a Valore non valido.
         /// </summary>
         internal static string ValoreNonValido {
             get {
