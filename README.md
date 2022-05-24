@@ -6,6 +6,10 @@ Attualmente è solo per console, ma è internazionalizzato.
 La cosa migliore da fare è usare Visual Studio per windows, che ha il traduttore di risorse specifico.
 Bisogna per prima cosa aprire il progetto in visual studio, poi aprire la cartella Strings. creare la propria cartella usando il formato della lingua a due caratteri (per esempio pt per portoghese o de per tedesco, sono standardizzati), a questo punto copiare il file Resource.rex già tradotto in un'altra lingua all'interno di questa cartella. A questo punto basta aprire il file Resources.resx per tradurre.
 
+<img width="166" alt="Immagine 2022-05-24 183923" src="https://user-images.githubusercontent.com/49764967/170088182-ae8ebea9-ba57-4df8-a653-1b6fa29434d0.png">
+<img width="1620" alt="Immagine 2022-05-24 184008" src="https://user-images.githubusercontent.com/49764967/170088188-248a572f-9de2-4270-9667-30c8eaca1cf2.png">
+
+
 In alternativa, è possibile aprire il file Resources.resx con qualsiasi editor di testo, tradurlo, e poi metterlo nella cartella apposita.
 La traduzione comincia dalla tupla "AdOperaDi".
 
