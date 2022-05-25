@@ -19,6 +19,13 @@ Va detto che l'autore della localizzazione non è hardcodato, ma è disponibile 
 
 Se volete mandarmi le vostre localizzazioni sono ben felice di aggiungerle al programma originale e di lasciarvi i credits, basta che aprite una pull request su questa piattaforma aggiungendo il file di risorse ed il file xml che i programmi creano.
 
+
+# Sviluppi futuri
+Prima di tutto è necessario dotarla di interfaccia grafica usando le windows.forms.
+E' opportuno effettuare la derivazione delle classi helper per sfruttare i socket al fine di ottenere un multiplayer alla tetrinet.
+Se volete farlo, siete liberi di poterlo sviluppare e di mandarmi i sorgenti come pull request, sarà mia premura mettervi tra gli sviluppatori del programma.
+Se, invece, volete produrre traduzioni di qualsiasi genere, siete comunque liberi di mandarmele, sempre facendo la pull request, in questo modo verrete inseriti tra i traduttori del programma
+
 # Bibliografia
 https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/keywords/ref
 
