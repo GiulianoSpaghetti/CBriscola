@@ -2,6 +2,23 @@
 Clone in c sharp del progetto briscola.
 Attualmente è solo per console, ma è internazionalizzato.
 
+
+Per installare i package Deb disponibili nella sezione release, bisogna usare dpkg passando come parametro i e i nomi dei files da installare.
+Verosimilmente
+
+# cd Scaricati
+
+# sudo dpkg -i *.deb
+
+A questo punto bisogna scaricaricare il dotnet dal repository Microsoft.
+Seguite le istruzioni all'indirizzo 
+https://docs.microsoft.com/it-it/windows-server/administration/linux-package-repository-for-microsoft-software per impostare il repository, poi date
+# sudo apt -f install
+
+I package sono universali e vanno bene sia per Ubuntu che per debian.
+Sentitevi liberi di incorporarli nei vostri server apt, a patto di mantenere integro il binario, come prevede la licenza GPL.
+
+
 # Come creare localizzazioni
 La cosa migliore da fare è usare Visual Studio per windows, che ha il localizzatore di risorse specifico.
 Bisogna per prima cosa aprire il progetto in visual studio, poi aprire la cartella Strings. creare la propria cartella usando il formato della lingua a due caratteri (per esempio pt per portoghese o de per tedesco, sono standardizzati), a questo punto copiare il file Resource.rex già tradotto in un'altra lingua all'interno di questa cartella. Adesso basta aprire il file Resources.resx per tradurre, modificando solo la colonna valore.
