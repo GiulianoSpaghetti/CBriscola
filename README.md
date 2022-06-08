@@ -2,6 +2,7 @@
 Clone in c sharp del progetto briscola.
 Attualmente è solo per console, ma è internazionalizzato.
 
+# Installazione
 
 Per installare i package Deb disponibili nella sezione release, bisogna usare dpkg passando come parametro i e i nomi dei files da installare.
 Verosimilmente
