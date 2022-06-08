@@ -9,7 +9,7 @@ Verosimilmente
 
 # cd Scaricati
 
-# sudo dpkg -i *.deb
+# sudo dpkg -i cbriscola*.deb
 
 A questo punto bisogna scaricaricare il dotnet dal repository Microsoft.
 Seguite le istruzioni all'indirizzo 
