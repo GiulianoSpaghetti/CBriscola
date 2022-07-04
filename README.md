@@ -44,6 +44,10 @@ E' opportuno effettuare la derivazione delle classi helper per sfruttare i socke
 Se volete farlo, siete liberi di poterlo sviluppare e di mandarmi i sorgenti come pull request, sarà mia premura mettervi tra gli sviluppatori del programma.
 Se, invece, volete produrre traduzioni di qualsiasi genere, siete comunque liberi di mandarmele, sempre facendo la pull request, in questo modo verrete inseriti tra i traduttori del programma
 
+# Donazioni
+
+Se vuoi, puoi donare qualcosa, secondo la tua propria opinione, con paypal, per il prezioso lavoro svolto.
+
 # Bibliografia
 https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/keywords/ref
 
