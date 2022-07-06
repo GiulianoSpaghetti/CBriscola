@@ -3,7 +3,18 @@ Clone in c sharp del progetto briscola.
 Attualmente è solo per console, ma è internazionalizzato.
 
 # Installazione
+# Debian
+Per prima cosa bisogna scaricaricare il dotnet dal repository Microsoft.
+Seguite le istruzioni all'indirizzo 
+https://docs.microsoft.com/it-it/windows-server/administration/linux-package-repository-for-microsoft-software per impostare il repository, poi date
 
+sudo add-apt-repository "http://MIO_INDIRIZZO_IP/repos/apt/debian bullseye main"
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 9D4AE50D
+
+sudo apt install cbriscola
+
+# The OLD FASCION DEBIAN WAY
 Per installare i package Deb disponibili nella sezione release, bisogna usare dpkg passando come parametro i e i nomi dei files da installare.
 Verosimilmente
 
