@@ -57,7 +57,9 @@ Se, invece, volete produrre traduzioni di qualsiasi genere, siete comunque liber
 
 # Donazioni
 
-Se vuoi, puoi donare qualcosa, secondo la tua propria opinione, con paypal, per il prezioso lavoro svolto.
+[![paypal](https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H4ZHTFRCETWXG)
+
+oppure puoi fare una donazione tramite carta hype.
 
 # Bibliografia
 https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/keywords/ref
