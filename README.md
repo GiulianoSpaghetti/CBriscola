@@ -8,7 +8,7 @@ Per prima cosa bisogna scaricaricare il dotnet dal repository Microsoft.
 Seguite le istruzioni all'indirizzo 
 https://docs.microsoft.com/it-it/windows-server/administration/linux-package-repository-for-microsoft-software per impostare il repository, poi date
 
-sudo add-apt-repository "http://MIO_INDIRIZZO_IP/repos/apt/debian bullseye main"
+sudo add-apt-repository "http://numeronesoft.ddns.net/repos/apt/debian bullseye main"
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 9D4AE50D
 
