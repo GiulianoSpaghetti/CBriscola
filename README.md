@@ -10,7 +10,7 @@ https://docs.microsoft.com/it-it/windows-server/administration/linux-package-rep
 
 sudo add-apt-repository "http://numeronesoft.ddns.net/repos/apt/debian bullseye main"
 
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 14A92445BD7CCE82
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 52B68EEB
 
 sudo apt install cbriscola
 
