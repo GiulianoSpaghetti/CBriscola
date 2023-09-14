@@ -1,3 +1,9 @@
+cbriscola (0.3-1) stable; urgency=medium
+
+  * Now the default translation is taked from system instead of being passed as parameter
+
+ -- Giulio Sorrentino <gsorre84@gmail.com>  Wed, 14 Sep 2023 03:57:52
+
 cbriscola (0.2.5-2) stable; urgency=medium
 
   * Added the manpage
