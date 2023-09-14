@@ -7,6 +7,8 @@
  *
  */
 
+using System.Globalization;
+
 namespace CBriscola {
 	class Program
 	{
@@ -16,9 +18,9 @@ namespace CBriscola {
 		private static giocatore secondo;
 		private static mazzo m;
 		public static System.Resources.ResourceManager mgr;
-		public static void Main(String[] args)
+		public static void Main()
 		{
-			CreaResourceManager(args.Length > 0 ? args[0] : "it");
+			CreaResourceManager(CultureInfo.CurrentCulture.TwoLetterISOLanguageName);
 			elaboratoreCarteBriscola e = new elaboratoreCarteBriscola();
 			m = new mazzo(e);
 			carta.inizializza(40, cartaHelperBriscola.getIstanza(e));
