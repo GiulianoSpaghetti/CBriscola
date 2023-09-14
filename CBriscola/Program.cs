@@ -32,7 +32,7 @@ namespace CBriscola {
 			carta c;
 			carta c1;
 			carta briscola = carta.getCarta(elaboratoreCarteBriscola.getCartaBriscola());
-			string vers = "0.2.5";
+			string vers = "0.3";
 			Console.WriteLine($"CBriscola {vers} {mgr.GetString("AdOperaDi")} Giulio Sorrentino. {mgr.GetString("Traduzione")} {mgr.GetString("AdOperaDi")} {mgr.GetString("Autore")}.");
 			for (UInt16 i = 0; i < 3; i++)
 			{
