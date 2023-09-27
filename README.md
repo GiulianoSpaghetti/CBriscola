@@ -6,13 +6,8 @@ Attualmente è solo per console, ma è internazionalizzato.
 # Debian
 Per prima cosa bisogna scaricaricare il dotnet dal repository Microsoft.
 Seguite le istruzioni all'indirizzo 
-https://docs.microsoft.com/it-it/windows-server/administration/linux-package-repository-for-microsoft-software per impostare il repository, poi date
-
-sudo add-apt-repository "http://numeronesoft.ddns.net/repos/apt/debian bullseye main"
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 52B68EEB
-
-sudo apt install cbriscola
+https://docs.microsoft.com/it-it/windows-server/administration/linux-package-repository-for-microsoft-software per impostare il repository, poi seguite le istruzioni su http://numeronesoft.ddns.net per impostare il repo, ed infine date apt install cbriscola.
+La trovate sotto /usr/games.
 
 # The OLD FASCION DEBIAN WAY
 Per installare i package Deb disponibili nella sezione release, bisogna usare dpkg passando come parametro i e i nomi dei files da installare.
