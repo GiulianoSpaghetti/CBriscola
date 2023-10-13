@@ -147,6 +147,9 @@
   <data name="di" xml:space="preserve">
     <value>di</value>
   </data>
+  <data name="GiocareTroppo" xml:space="preserve">
+    <value>Non starai giocando troppo?</value>
+  </data>
   <data name="Giocata" xml:space="preserve">
     <value>Giocata carta</value>
   </data>
@@ -158,6 +161,9 @@
   </data>
   <data name="InserisciNuovoNumero" xml:space="preserve">
     <value>Valore inserito non valido. Inserire un valore compreso tra 1 e</value>
+  </data>
+  <data name="NuovaPartita" xml:space="preserve">
+    <value>Vuoi cominciare un nuovo match? 1: si 0: no</value>
   </data>
   <data name="PartitaFinita" xml:space="preserve">
     <value>La partita è finita</value>
@@ -176,6 +182,9 @@
   </data>
   <data name="PuntiUtente" xml:space="preserve">
     <value>Punti tuoi</value>
+  </data>
+  <data name="SecondaPartita" xml:space="preserve">
+    <value>Vuoi effettuare una seconda partita? 1: si 0: no</value>
   </data>
   <data name="spade" xml:space="preserve">
     <value>spade</value>

@@ -147,6 +147,9 @@
   <data name="di" xml:space="preserve">
     <value>of</value>
   </data>
+  <data name="GiocareTroppo" xml:space="preserve">
+    <value>You are playing too mutch, aren't you?</value>
+  </data>
   <data name="Giocata" xml:space="preserve">
     <value>Card played</value>
   </data>
@@ -158,6 +161,9 @@
   </data>
   <data name="InserisciNuovoNumero" xml:space="preserve">
     <value>Invalid rvalue entered. Enter a value between 1 and</value>
+  </data>
+  <data name="NuovaPartita" xml:space="preserve">
+    <value>Do you want to play a new match? 1: yes 0: no</value>
   </data>
   <data name="PartitaFinita" xml:space="preserve">
     <value>Game Over</value>
@@ -176,6 +182,9 @@
   </data>
   <data name="PuntiUtente" xml:space="preserve">
     <value>Your points</value>
+  </data>
+  <data name="SecondaPartita" xml:space="preserve">
+    <value>Do you want to play a second game? 1: yes 0: no</value>
   </data>
   <data name="spade" xml:space="preserve">
     <value>swords</value>

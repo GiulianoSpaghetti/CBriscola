@@ -147,6 +147,9 @@
   <data name="di" xml:space="preserve">
     <value>desde</value>
   </data>
+  <data name="GiocareTroppo" xml:space="preserve">
+    <value>¿No estás jugando demasiado?</value>
+  </data>
   <data name="Giocata" xml:space="preserve">
     <value>Carta jugada</value>
   </data>
@@ -158,6 +161,9 @@
   </data>
   <data name="InserisciNuovoNumero" xml:space="preserve">
     <value>Valor no válido. Por favor inserte un número entre 1 y</value>
+  </data>
+  <data name="NuovaPartita" xml:space="preserve">
+    <value>¿Quieres empezar un nuevo partido? 1: sí 0: no</value>
   </data>
   <data name="ParitaPatta" xml:space="preserve">
     <value>La jugada es en paridad</value>
@@ -176,6 +182,9 @@
   </data>
   <data name="PuntiUtente" xml:space="preserve">
     <value>Tus puntos</value>
+  </data>
+  <data name="SecondaPartita" xml:space="preserve">
+    <value>¿Quieres jugar un segundo juego? 1: sí 0: no</value>
   </data>
   <data name="spade" xml:space="preserve">
     <value>espadas</value>
