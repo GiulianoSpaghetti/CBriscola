@@ -53,20 +53,3 @@ Se, invece, volete produrre traduzioni di qualsiasi genere, siete comunque liber
 # Donazione
 
 http://numerone.altervista.org/donazioni.php
-
-# Bibliografia
-https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/keywords/ref
-
-https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/keywords/interface
-
-https://docs.microsoft.com/it-it/dotnet/api/system.string.compareto?view=net-6.0
-
-https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager?view=net-6.0
-
-https://livebook.manning.com/book/dotnet-core-in-action/chapter-10/6
-
-https://docs.microsoft.com/it-it/windows-server/administration/linux-package-repository-for-microsoft-software
-
-https://stackoverflow.com/questions/21019144/how-to-create-manual-entry-for-deb-package
-
-https://github.com/numerunix/briscola
