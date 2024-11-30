@@ -6,7 +6,7 @@ Attualmente è solo per console, ma è internazionalizzato.
 # Debian
 Per prima cosa bisogna scaricaricare il dotnet dal repository Microsoft.
 Seguite le istruzioni all'indirizzo 
-https://docs.microsoft.com/it-it/windows-server/administration/linux-package-repository-for-microsoft-software per impostare il repository, poi seguite le istruzioni su http://numeronesoft.ddns.net per impostare il mio repo.
+https://docs.microsoft.com/it-it/windows-server/administration/linux-package-repository-for-microsoft-software per impostare il repository, poi seguite le istruzioni su http://numeronesoft.ddns.net:8080 per impostare il mio repo.
 Infine date sudo apt install cbriscola: la troverete sotto /usr/games.
 
 # The OLD FASCION DEBIAN WAY
